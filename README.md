@@ -1,6 +1,6 @@
 # SoundStream: An End-to-End Neural Audio Codec
 
-This repository is an implementation of the [article](https://arxiv.org/abs/2107.03312) with same name.
+This repository is an implementation of the [article](https://arxiv.org/abs/2107.03312) with the use of Zalo AI Challenge Dataset.
 
 <p align="center">
 <img src="./images/soundstream.png" alt="SoundStream's architecture"/>
