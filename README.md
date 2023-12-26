@@ -8,7 +8,8 @@ This repository is an implementation of the [article](https://arxiv.org/abs/2107
 
 The _RVQ_ (stands for Residual Vector Quantizer) relies on __lucidrains__' [repository](https://github.com/lucidrains/vector-quantize-pytorch).
 
-I built this implementation to serve my needs and some features are missing from the original article.
+This implementation is for my study purposes.
+The Dataset is in .zip file, Unzip it before run main.py
 
 ## Missing pieces
 
