@@ -1,20 +1,22 @@
-# SoundStream: An End-to-End Neural Audio Codec
+# SoundStream: An Implementation of the End-to-End Neural Audio Codec
 
-This repository is an implementation of the [article](https://arxiv.org/abs/2107.03312) with the use of Zalo AI Challenge Dataset.
+This repository presents an implementation of the end-to-end neural audio codec described in the research paper titled "SoundStream: An End-to-End Neural Audio Codec" by Neil Zeghidour, Alejandro Luebs, Ahmed Omran, Jan Skoglund, and Marco Tagliasacchi. The associated research paper can be found here. The implementation utilizes the Zalo AI Challenge Dataset.
 
 <p align="center">
-<img src="./images/soundstream.png" alt="SoundStream's architecture"/>
+  <img src="./images/soundstream.png" alt="SoundStream's architecture"/>
 </p>
 
-The _RVQ_ (stands for Residual Vector Quantizer) relies on __lucidrains__' [repository](https://github.com/lucidrains/vector-quantize-pytorch).
+## Dependencies and Acknowledgments
+The implementation leverages the Residual Vector Quantizer (RVQ), as introduced by the lucidrains repository. Please ensure that the necessary dependencies are installed before running the code.
 
-This implementation is for my study purposes.
-The Dataset is in .zip file, Unzip it before run main.py
+## Usage
+Before running the main script (main.py), it is essential to unzip the provided dataset, which is packaged in a train.zip file.
 
-## Missing pieces
+## Missing Functionalities
+The current implementation lacks certain functionalities, including:
 
-- [ ] __Denoising__: this implementation is not built to denoise, so there is no conditioning signal nor _Feature-wise Linear Modulation_ blocks.
-- [ ] __Bitrate scalability__: for now, quantizer dropout has not been implemented.
+- [ ] __Denoising__: The codec does not support denoising. Consequently, there is no provision for a conditioning signal or the inclusion of Feature-wise Linear Modulation blocks.
+- [ ] __Bitrate scalability__: The implementation currently does not incorporate quantizer dropout for bitrate scalability.
 
 ## Citations
 
